@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void dfs(int v , vector<vector<int>>& adj , vector<int>& visited , vector<int>& result){
+void dfs(int v , vector<int> adj[] , vector<int>& visited , vector<int>& result){
 
     // mark v as visited
     visited[v] = 1;
