@@ -35,7 +35,7 @@ public:
                 int nrow = r + deltaRow[i];
                 int ncol = c + deltaCol[i];
                 if(nrow >=0 && nrow < m && ncol >= 0 && ncol < n && visited[nrow][ncol] == 0 && grid[nrow][ncol] == 1){
-                    q.push({{nrow,ncol},t+1});   // if neightbouring index in range & orange is not visited and fresh
+                    q.push({{nrow,ncol},t+1});   // if neighbouring index in range & orange is not visited and fresh
                     visited[nrow][ncol] = 2;     // make it rotten 
                     cnt++;                       // count of rotting oranges
                 }
