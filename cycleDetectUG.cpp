@@ -17,7 +17,7 @@ class Solution {
                     vis[it] = 1;
                     q.push({it,curr});
                 }
-                else if(it != parent) return true;
+                else if(it != parent) return true;  
             }
         }
         return false;
