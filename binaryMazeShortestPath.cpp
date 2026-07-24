@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// Djikstra 
 class Solution {
 public:
     int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
