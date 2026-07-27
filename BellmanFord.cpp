@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
   public:
     vector<int> bellmanFord(int V, vector<vector<int>>& edges, int src) {
-        
+
         // just relax all edges V-1 times 
 
         vector<int>  dist(V,1e8);
@@ -19,7 +19,7 @@ class Solution {
                 }
             }
         }
-        // Negative edge cycle check (Nth iteration)
+        // Negative edge cycle check (Vth iteration)
         for(auto& it:edges){
             int u = it[0];
             int v = it[1];
